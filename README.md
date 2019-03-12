@@ -1,6 +1,4 @@
-# chef-deception-agent
-
-Example Chef Recipe for Deception Logic
+# Example Chef Recipe for Deception Logic
 
 ## Configuration
 
