@@ -1,12 +1,3 @@
-# chef-deception-agent
-
-Example Chef Recipe for Deception Logic
-
-## Configuration
-
-config.json
-
-```json
 {
     "run_list": [
         "recipe[deceptionagent::default]"
@@ -21,10 +12,3 @@ config.json
         }
     }
 }
-```
-
-## Deploy
-
-```shell
-chef-apply config.json
-```

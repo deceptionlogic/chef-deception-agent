@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+  use_sudo: true
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6 #passed
+  - name: centos-7 #passed
+  - name: debian-8 #passed
+  - name: debian-9 #passed
+  - name: ubuntu-14.04 #passed
+  - name: ubuntu-16.04 #passed
+  - name: ubuntu-17.10 #passed
+suites:
+  - name: default
+    run_list:
+      - recipe[deceptionagent::default]
+    attributes:
+      deceptionagent:
+        key_id: "foo"
+        secret_key: "bar"
+        log_file_retention: "10"
